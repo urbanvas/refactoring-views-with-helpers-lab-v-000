@@ -12,8 +12,3 @@
 <br>
 <%= link_to "Add New Song", new_song_path %>
 
-<% if @song.artist %>
-  <%= link_to @song.artist.name, artist_path(@song.artist) %>
-<% else %>
-  <%= link_to "Add Artist", edit_song_path(@song) %>
-<% end %>
